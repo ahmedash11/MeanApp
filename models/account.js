@@ -52,6 +52,7 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
 module.exports.updateProfPicture = function(req,res){
 	let account = new User(req.body);
  // account._id = req.body.id;
+ //eh
 if(req.files){
 	req.files.forEach(function(file){
 		if(file.fieldname ==="image"){
